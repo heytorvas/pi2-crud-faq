@@ -49,8 +49,8 @@
 								<div class="col-md-2">
 									<label for="pergunta" class="active"> Pergunta: </label>
 								</div>
-								<div class="col-md-6">
-									<input name="pergunta" th:field="*{pergunta}" id="pergunta" class="validate">
+								<div class="col-md-9">
+									<input name="pergunta" th:field="*{pergunta}" id="pergunta" class="validate form-control">
 								</div>
 							</div>
 
@@ -58,8 +58,8 @@
 								<div class="col-md-2">
 									<label for="resposta" class="active"> Resposta: </label>
 								</div>
-								<div class="col-md-6">
-									<input name="resposta" th:field="*{resposta}" id="resposta" class="validate">
+								<div class="col-md-9">
+									<textarea name="resposta" th:field="*{resposta}" id="resposta" class="validate form-control" />
 								</div>
 							</div>
 							
@@ -85,16 +85,18 @@
 									<label for="nomepesquisa" class="active"> Pesquisar por
 										pergunta: </label>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-9">
 									<input name="nomepesquisa" id="nomepesquisa"
-										class="validate">
+										class="validate form-control">
 								</div>
-								<div class="col-md-5">
+								<div class="col-md-1">
 									 <input class="btn btn-info" type="submit" value="Pesquisar">
 								</div>
 							</div>
 						</form>
 					</div>
+					
+					<br />
 
 					<table class="table table-striped">
 						<thead>
